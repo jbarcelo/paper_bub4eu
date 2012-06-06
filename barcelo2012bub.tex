@@ -358,22 +358,22 @@
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{Michael Shell}
-\IEEEauthorblockA{School of Electrical and\\Computer Engineering\\
-Georgia Institute of Technology\\
-Atlanta, Georgia 30332--0250\\
-Email: http://www.michaelshell.org/contact.html}
-\and
-\IEEEauthorblockN{Homer Simpson}
-\IEEEauthorblockA{Twentieth Century Fox\\
-Springfield, USA\\
-Email: homer@thesimpsons.com}
-\and
-\IEEEauthorblockN{James Kirk\\ and Montgomery Scott}
-\IEEEauthorblockA{Starfleet Academy\\
-San Francisco, California 96678-2391\\
-Telephone: (800) 555--1212\\
-Fax: (888) 555--1212}}
+%\author{\IEEEauthorblockN{Jaume Barcelo, Boris Bellalta, Albert Domingo, Cristina Cano, Miquel Oliver}
+%\IEEEauthorblockA{School of Electrical and\\Computer Engineering\\
+%Georgia Institute of Technology\\
+%Atlanta, Georgia 30332--0250\\
+%Email: http://www.michaelshell.org/contact.html}
+%\and
+%\IEEEauthorblockN{Homer Simpson}
+%\IEEEauthorblockA{Twentieth Century Fox\\
+%Springfield, USA\\
+%Email: homer@thesimpsons.com}
+%\and
+%\IEEEauthorblockN{James Kirk\\ and Montgomery Scott}
+%\IEEEauthorblockA{Starfleet Academy\\
+%San Francisco, California 96678-2391\\
+%Telephone: (800) 555--1212\\
+%Fax: (888) 555--1212}}
 
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
@@ -383,19 +383,22 @@ Fax: (888) 555--1212}}
 % for over three affiliations, or if they all won't fit within the width
 % of the page, use this alternative format:
 % 
-%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
-%Homer Simpson\IEEEauthorrefmark{2},
-%James Kirk\IEEEauthorrefmark{3}, 
-%Montgomery Scott\IEEEauthorrefmark{3} and
-%Eldon Tyrell\IEEEauthorrefmark{4}}
-%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
-%Georgia Institute of Technology,
-%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
-%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
-%Email: homer@thesimpsons.com}
+\author{\IEEEauthorblockN{Jaume Barcelo\IEEEauthorrefmark{1},
+Boris Bellalta\IEEEauthorrefmark{1},
+Roger Baig\IEEEauthorrefmark{2}, 
+Ramon Roca\IEEEauthorrefmark{2},
+Cristina Cano\IEEEauthorrefmark{1},
+Luis Sanabria\IEEEauthorrefmark{1} and
+Miquel Oliver\IEEEauthorrefmark{1}}
+\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
+Georgia Institute of Technology,
+Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
+\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
+Email: homer@thesimpsons.com}
 %\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
 %Telephone: (800) 555--1212, Fax: (888) 555--1212}
-%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
+%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}
+}
 
 
 
@@ -465,12 +468,24 @@ In this context, the \emph{Commons for Europe} (C4EU) European project aims to b
 The particularity of BuB is the active role the individuals and organizations that are the beneficiaries of the network in the network planning, funding, deployment and maintenance.
 
 The remainder of this article is organized as follows.
+The next section briefly reviews previous work.
 Sec.~\ref{sec:commons} introduces the concept of common resources in data networks.
 An overview of the specific technologies considered in the C4EU project is presented in Sec.~\ref{sec:technologies}.
 Then, Sec.~\ref{sec:bub} provides a definition of BuB.
 The pilot oriented methodology that we use in the C4EU project is described in Sec.~\ref{sec:methodology}.
 The different BuB pilot proposals that have been considered in the C4EU project are summarized in Sec.~\ref{sec:proposals}.
 Finally, the paper concludes with Sec.~\ref{sec:conclusion}.
+
+\section{Related Work}
+
+BuB pilots have their precedents in electronic community networks \cite{schuler1994cnb} and wireless community networks \cite{flickenger2001wcn,jain2003wcn}.
+BuB inherits the spirit of collaboration and the principles of inclusiveness.
+It is also related to Municipal WiFi initiatives \cite{jassem2010mwc}, in the sense that BuB initiatives are sometimes backed by local authorities as an effective way to promote the availability and use of data networks.
+
+BuB also represents a shift from the traditional top-down deployments.
+Alternative models for network deployments have been considered in the past in \cite{barcelo2008wom} and \cite{seraghiti2010upw}.
+
+A complete guide for BuB deployments and illustrative case studies is presented in \cite{aichele2006wnd}.
 
 \section{Common Resources}
 \label{sec:commons}
@@ -487,7 +502,7 @@ A paradigmatic success story of the use of commons in networking is the allocati
 It is mentioned in \cite{abramson2009asw} that Michael Marcus proposed in the eighties the establishment of unlicensed bands as a commons resource.
 The availability of this bands has spurred the growth of the wireless industry making possible the IEEE 802.11 (WiFi) technologies that are in widespread use nowadays.
 
-Note that this particular example is exposed to \emph{the tragedy of the commons}.
+Note that this particular example is exposed to \emph{the tragedy of the commons} \cite{hardin1968tc,feeny1990tct}.
 The tragedy of the commons is a well studied situation in which the members of a community over-exploit a common resource and substantially reduce its value.
 In the case of ISM bands, if the number of transmissions grows too high, the resultant interference will render the network unusable.
 
