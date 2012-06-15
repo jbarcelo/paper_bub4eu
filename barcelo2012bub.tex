@@ -422,6 +422,7 @@ A selection of these proposals will be executed and carefully documented to defi
 The documentation will include project templates, work plans, case studies, replicable success models and regulatory guidelines.
 
 The overall goal of the project is to assess the validity of the BuB model to effectively and efficiently complement exiting traditional deployments in satisfying the networking and technological needs of the European citizens and organizations.
+
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -454,36 +455,45 @@ Broadband access means access to a plethora of multimedia educational resources,
 Ideally, broadband services should be accessible to all the citizens independently of their age, education, economical status or geographical distribution.
 
 With this goal, several community networks have appeared to promote the access to broadband in highly collaborative scenarios.
-This community networks are typically led by technology enthusiasts, but they attract a mass of participants which are, initially, not necessarily technologically savvy. 
-Nevertheless, the high degree of participation and interaction between the participants create the right environment for knowledge transfer and many of the users involved in these community networks quickly acquire basic or advanced networking skills.
+These community networks are typically led by technology enthusiasts and with a strong to contribute to the community.
+To succeed and grow, it is important to involve other people that might not be, initially, technologically savvy.
+Nevertheless, the high degree of participation and interaction between the participants create the right environment for knowledge transfer and many of the users involved in these community networks quickly acquire advanced networking skills.
+
+It is possible to establish some parallelisms between the community networks and the open source community.
+Each community network has its own \emph{developers}, but all the participants in different communities share a set of principles, good practices and high-level objectives.
+Similarly, community networks activists are normally part of a local community network, but they also collaborate at a higher level with other community networks.
 
 Other actors active in the promotion of broadband access are some public institutions, typically municipalities, that have been compelled to offer basic networking services to their citizens and visitors in the form of hotspots.
 Even though these services are very limited, they are greatly appreciated by the users.
 
 There is a desire to extend and complement current network deployment efforts, find easily replicable success models and establish collaborations among highly heterogeneous groups that share similar goals.
-In this context, the \emph{Commons for Europe} (C4EU) European project aims to be a catalyzer that makes possible the collaboration among these groups and establishes the necessary documentation, methodology, and good practices to ease and replicate Bottom-up-Broadband (BuB) network deployments that ultimately benefit European citizens.
+In this context, Bottom-up Broadband (BuB) branch of the \emph{Commons for Europe} (C4EU) European project aims to be a catalyzer that makes possible the collaboration among these groups and establishes the necessary documentation, methodology, and good practices to ease and replicate BuB network deployments that ultimately benefit European citizens.
+The present paper covers the project definitions and goals, as well as the pilot proposals identified during the first 6 months of the papers.
+In our future works, we will provide a more detailed description of the executed pilots an results of the project.
 
-The particularity of BuB is the active role the individuals and organizations that are the beneficiaries of the network in the network planning, funding, deployment and maintenance.
+The particularity of BuB is that the beneficiaries of the network (individuals or organizations) play an active rol in the network planning, funding, deployment and maintenance.
 
 The remainder of this article is organized as follows.
 The next section briefly reviews previous work.
-Sec.~\ref{sec:commons} introduces the concept of common resources in data networks.
+Sec.~\ref{sec:commons} introduces the concept of common resources in computer networks.
 An overview of the specific technologies considered in the C4EU project is presented in Sec.~\ref{sec:technologies}.
 Then, Sec.~\ref{sec:bub} provides a definition of BuB.
 The pilot oriented methodology that we use in the C4EU project is described in Sec.~\ref{sec:methodology}.
 The different BuB pilot proposals that have been considered in the C4EU project are summarized in Sec.~\ref{sec:proposals}.
-Finally, the paper concludes with Sec.~\ref{sec:conclusion}.
+Finally, Sec.~\ref{sec:conclusion} concludes the paper.
 
 \section{Related Work}
 
-BuB pilots have their precedents in electronic community networks \cite{schuler1994cnb} and wireless community networks \cite{flickenger2001wcn,jain2003wcn}.
+BuB pilots have their precedents in wireless community networks \cite{flickenger2001wcn,jain2003wcn}.
 BuB inherits the spirit of collaboration and the principles of inclusiveness.
 It is also related to Municipal WiFi initiatives \cite{jassem2010mwc}, in the sense that BuB initiatives are sometimes backed by local authorities as an effective way to promote the availability and use of data networks.
 
 BuB also represents a shift from the traditional top-down deployments.
 Alternative models for network deployments have been considered in the past in \cite{barcelo2008wom} and \cite{seraghiti2010upw}.
 
-A complete guide for BuB deployments and illustrative case studies is presented in \cite{aichele2006wnd}.
+A guide for BuB deployments and illustrative case studies is presented in \cite{aichele2006wnd}.
+The growth of \emph{guifi.net} and the consequent increment of Internet penetration in the area in which has developed is studied in \cite{oliver2010wca}.
+\emph{guifi.net} is probably the world's largest community network with over 16,000 active nodes as of 2012.
 
 \section{Common Resources}
 \label{sec:commons}
@@ -494,10 +504,12 @@ The spirit of the project is to encourage the participation and implication of t
 A recurrent example is the application \emph{adopt a hydrant} in which citizens take responsibility for shoveling out a fire hydrant after it snows.
 This eases the task of firemen in case there is a fire in the neighbourhood.
 
+The \emph{adopt a hydrant} application is one of the most emblematic achievements of the \emph{Code for America} initiative \cite{codeforamerica}.
+
 The other aspect of interest in the C4EU project is Bottom-up Broadband (BuB).
 The aim of BuB is to deploy networks and networking services that can be used as a common resource.
 A paradigmatic success story of the use of commons in networking is the allocation of the Industrial, Scientific and Medical (ISM) radio bands.
-It is mentioned in \cite{abramson2009asw} that Michael Marcus proposed in the eighties the establishment of unlicensed bands as a commons resource.
+It is mentioned in \cite{abramson2009asw} that Michael Marcus proposed in the eighties the establishment of unlicensed bands as a common resource.
 The availability of these bands has spurred the growth of the wireless industry making possible the IEEE 802.11 (WiFi) technologies that are in widespread use nowadays.
 
 Note that this particular example is exposed to \emph{the tragedy of the commons} \cite{hardin1968tc,feeny1990tct}.
@@ -508,10 +520,13 @@ Even though the tragedy of the commons may occur in certain busy locations at bu
 
 Another good example of commons in networking is optical fiber deployment.
 Deploying the cable can have a high cost, but every cable has multitude (e.g., 96) fibers.
+Differently from WiFi technology, fibre optics do not place practical limitations in terms of available bandwidth.
 After deploying the cable, some of these fibers may remain unused and the owner may decide to offer them as a common resource in order to facilitate the growth of the network.
 
-A recurrent statement in networking is that the value of a network is proportional to the square of the number of nodes (Metcalfe's Law).
-It is true in many situations that adding new nodes to a network represents a win-win situation for all the participants.
+A recurrent statement in networking is that the value of a network is proportional to the square of the number of nodes.
+This somewhat controversial rule of thumb is known as Metcalfe's Law.
+Despite the controversy, there is a general agreement that the value of the networks grows super-linearly with the number of nodes \cite{odlyzko2005rml}.
+This means that, in many situations, adding new nodes to a network represents a win-win situation for all the participants.
 If this is the case, the owners of the network may be willing to offer their own network resources as commons, as the value of their network will increase when others connect to it.
 
 The BuB branch of the C4EU project is devoted to the exploration of networking initiatives in which different individuals and organizations team up to create and extend data networks using common resources.
@@ -534,8 +549,11 @@ For this reason, fibre optics is also a technology under consideration in BuB de
 The bandwidth available using optical links is orders of magnitude larger than that of WiFi.
 Furthermore, links are more stable and are not affected by the interference or the weather.
 Compared to wireless, deploying a fibre optics link is much more expensive.
-Nevertheless, if this link can be used as a commons resource, fibre optics can be economically viable.
-Furthermore, it may be the case that there are already publicly owned fibers that can be used as a commons resource.
+Nevertheless, if this link can be used as a common resource, fibre optics can be economically viable.
+Furthermore, it may be the case that there are already publicly owned fibers that can be used as a common resource.
+
+In the BuB parlance, fiber deployments are usually termed FFTF (fiber from the farm \cite{roca2011fft}) or FFTH (fiber from the home).
+These names emphasize the bottom-up nature of these deployment.
 
 Another technology under consideration is sensor networks.
 Quite often, sensor nodes are battery-powered devices with limited communication capabilities.
@@ -549,11 +567,11 @@ An interesting aspect regarding sensor networks is that the data itself can be o
 
 Finally, the last considered technology is SuperWiFi, which attempts to reproduce the success of WiFi at a different frequency band.
 In particular, SuperWifi operates at lower frequencies (TV white spaces).
-The idea is to use the spectrum unused by TV channels as a commons.
-The problem is that the equipment intended for this band must comply with very strict requirement to prevent the interference with licensed users.
+The idea is to use the spectrum unused by TV channels as commons.
+The problem is that the equipment intended for this band must comply with very strict requirements to prevent the interference with licensed users.
 
 The advantages of SuperWiFi compared to regular WiFi is that at lower frequencies we have larger coverage areas and better in-building penetration.
-Increased coverage has also the downside of higher interference.
+Increased coverage has also the downside of higher interference radius.
 
 
 \begin{table}[!t]
@@ -569,21 +587,25 @@ Increased coverage has also the downside of higher interference.
 Technology & Characteristics \\
 \hline
 Fibre Optics & Mature technology, wired, very high throughput, relatively expensive, does not create nor suffer interference, reliable. \\
-WiFi & Mature technology, wireless, high throughput, more economic than fibre, interference and spectrum saturation. \\
+WiFi & Mature technology, wireless, high throughput, more economic than fibre, limited by interference and spectrum saturation. \\
 Sensors & New technology, wireless, low throughput (for battery-powered devices), open data. \\
 Super-WiFi & Future technology, wireless, medium throughput, longer propagation distance and better penetration compared to WiFi, co-existence with incumbent networks.\\
 \hline
 \end{tabular}
 \end{table}
 
+The main characteristics of the technologies considered in the C4EU project are summarized in Table~\ref{tab:technologies}.
 Some of the considered deployments include more than one of the above mentioned technologies.
-An example of a BuB network combining fiber optics, WiFi and mesh technologies is illustrated in Fig.~\ref{fig:hybrid}.
+An example of a BuB network combining fiber optics, WiFi, mesh and sensor technologies is illustrated in Fig.~\ref{fig:hybrid}.
+The sensors benefit from the bandwidth and coverage of WiFi and mesh technologies to send the sensed data and the wireless traffic is later aggregated in high-speed fibre optics links.
 \begin{figure}[!t]
 \centering
 \includegraphics[width=\linewidth]{hybrid}
 \caption{An hybrid BuB deployment combining different technologies.}
 \label{fig:hybrid}
 \end{figure}
+
+
 
 Besides technology, there is also an interest in the C4EU project to explore regulatory issues.
 Regulation can deeply impact the ways in which BuB can be used and deployed.
@@ -601,6 +623,9 @@ In this case the users are tourists, which are not the promoters of the bottom-u
 Nevertheless, by being able to share their experiences online, these tourists will help in publicizing the touristic destination.
 And this publicity benefits the promoters of the network.
 
+Another example is one of the pilot proposals described in \cite{barcelo2012bpp} in which the promoter of the network is a football club.
+The users of the network will be the fans and the club will benefit from the network as it will help to strengthen the community that ultimately supports the club.
+
 The promoters of the network can be individuals or organizations.
 And these organizations can be private companies, public institutions, non-governmental organizations, etc.  
 It is also perfectly possible that the backers of BuB network represent a heterogeneous group, that share a common interest in the deployment of the network.
@@ -611,7 +636,7 @@ It requires substantial amounts of money, time and know-how.
 %And it requires a clear commitment by part of the all the network promoters as emphasized in Fig.~\ref{fig:success_wheel}.
 One of the goals of the C4EU project is to help to organize, publicize and transfer the  BuB know-how among those pilots that already have the money and time required to succeed.
 
-It is normal for people that is not familiar with BuB networks to be reluctant to accept that it is possible to deploy broadband networks following a collaborative approach.
+Some people might be reluctant to accept that it is possible to deploy broadband networks following a collaborative approach.
 For this reason, the first BuB initiatives should be oriented to achieve \emph{quick wins}.
 A \emph{quick win} is a small, not particularly ambitious, project that can be successfully completed in a short time.
 The completion of a \emph{quick win} will provide the necessary confidence for the involvement in larger, more complex projects.
@@ -640,29 +665,16 @@ This community, with the help of the know-how gathered during the C4EU pilot, sh
 
 The first step of the project has been the dissemination of a call for pilot proposal in which the participants of the project have identified and documented potential pilots to be executed within the C4EU project.
 
-To systematize the information gathering process, we have created a pilot proposal template that contains the following relevant information about the project:
+To systematize the information gathering process, we have created a pilot proposal template that contains the items represented in Fig.~\ref{fig:BuB4EU_pilot_template_upf}.  
+More details about the exact meaning of each item are offered in \cite{barcelo2012bpp}.
 
-\begin{itemize}
-  \item Title
-  \item Brief Description
-  \item Goals
-  \item Start date
-  \item End date
-  \item Priority (Low/Normal/High)
-  \item Stage 
-  (Prospect / Pre-project / Review / Execution / Evaluation / Finished)
-  \item Status (Not started/In progress/On hold/Completed)
-  \item Progress (\%)
-  \item Country
-  \item Region
-  \item City
-  \item Neighbourhood
-  \item Project type (WiFi/SuperWiFi/Fibre Optics/Hybrid)
-  \item Contacts
-  \item Risk (0\% means that the success is guaranteed. 100\% means that it is impossible to successfully complete this pilot)
-  \item Regulatory issues
-  \item Comments
-\end{itemize}
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\linewidth]{BuB4EU_pilot_template_upf}
+\caption{Success by recursion.}
+\label{fig:success_wheel}
+\end{figure}
+
 
 A second call for pilots is programmed for the second year of the project. 
 The call for pilots and the gathered information offers a picture of the state of Bottom-up Broadband initiatives in Europe.
@@ -717,6 +729,7 @@ NQN is being constructed as an Industrial Provident Society (IPS), which is an o
 
 \subsection{Hulme High Street}
 This is the third pilot proposal by the MDDA and it is very similar in nature to the above mentioned NQN.
+The goal is to deploy a community-led and owned broadband network that combines fibre optics and WiFi technology.
 
 \subsection{CAC}
 CAC stands for Catalonia's Audiovisual Council and the goal of this pilot is to use the available spectrum from the digital dividend to broadcast IPTV content using SuperWiFi.
@@ -733,7 +746,7 @@ This pilot has been proposed by \emph{guifi.net}.
 OpenWisp is a project initiated by the Province of Rome to extend the opportunities of the citizens to access broadband Internet.
 This service is publicized with the name \emph{ProvinciaWiFi} and makes use of free software tools and open standards combined with low-cost hardware.
 It has deployed several hundreds of access points that offer access to registered users in public locations.
-The platform is offered as a commons resource for others to replicate and collaborate.
+The platform is offered as a common resource for others to replicate and collaborate.
 This project has been jointly proposed by Provincia di Roma and CASPUR.
 
 \subsection{EuropeWiFi}
@@ -744,7 +757,7 @@ This project is also promoted by CASPUR and Provincia di Roma.
 \subsection{Gurb}
 Gurb is a village that has already carried out a first phase of BuB fibre optics deployment.
 This pilot represents a second phase of the deployment that re-uses municipality-owned infrastructure.
-This initiatives are described with the acronym FFTF which means Fiber From The Farm.
+These initiatives are described with the acronym FFTF which means Fiber From The Farm.
 The emphasis is placed in the fact that the deployment starts from the farm, making it clear that it is a truly BuB initiative.
 The organization that orchestrates the deployment is called GurbTec.
 
